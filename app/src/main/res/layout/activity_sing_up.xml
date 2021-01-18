@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_edit_text"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/surName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_edit_text"
+            android:hint="Surnmae"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:hint="Username"
+            android:layout_marginTop="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree with the Terms &amp; Condition"
+                android:layout_marginRight="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewCamposVacios"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/red"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnSingUp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/gray_dark"
+            android:text="Sing Up"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

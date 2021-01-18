@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUp">
+
+    <include
+        android:id="@+id/toolbarLogin"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/gray">
+
+
+        <ImageView
+            android:id="@+id/imgView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_alignTop="@id/imgView3"
+            android:layout_alignLeft="@id/imgView3"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="100dp"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:hint="Username"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_edit_text"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPassword"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewCamposVacios"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/btnLogin"
+        android:layout_alignLeft="@id/btnLogin"
+        android:layout_marginTop="-20dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/gray_dark"/>
+
+</RelativeLayout>
