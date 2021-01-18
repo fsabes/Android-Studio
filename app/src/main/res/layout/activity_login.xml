@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SingUp">
+    tools:context=".ActivitySingUp">
 
     <include
         android:id="@+id/toolbarLogin"
@@ -23,7 +23,8 @@
             android:layout_height="150dp"
             android:background="@color/white"
             android:layout_marginTop="70dp"
-            android:layout_marginLeft="80dp"/>
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/login"/>
 
         <ImageView
             android:layout_width="150dp"
@@ -32,7 +33,8 @@
             android:layout_alignTop="@id/imgView3"
             android:layout_alignLeft="@id/imgView3"
             android:layout_marginTop="80dp"
-            android:layout_marginLeft="100dp"/>
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/login"/>
 
         <EditText
             android:id="@+id/userName"

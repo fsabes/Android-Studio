@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejercicio2.databinding.ActivityHomeBinding
 
-class Home : AppCompatActivity() {
+class ActivityHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        var binding:ActivityHomeBinding = ActivityHomeBinding.inflate(layoutInflater)
+        var binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.ToolbarHome))

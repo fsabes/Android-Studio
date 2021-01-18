@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejercicio2.databinding.ActivityLoginBinding
 
-class Login : AppCompatActivity() {
+class ActivityLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding: ActivityLoginBinding = ActivityLoginBinding.inflate(layoutInflater)
+        var binding = ActivityLoginBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -20,7 +20,7 @@ class Login : AppCompatActivity() {
                 binding.textViewCamposVacios.text = "empty fields are not allowed"
             }
             else{
-                val intent = Intent(this,Home::class.java)
+                val intent = Intent(this,ActivityHome::class.java)
                 val cliente = Cliente("franco","sabes",binding.userName.text.toString(),"adsa@gmail.com","asasdasdasdd")
                 intent.putExtra("cliente",cliente)
                 startActivity(intent)

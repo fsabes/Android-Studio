@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejercicio2.databinding.ActivitySingUpBinding
 
-class SingUp : AppCompatActivity() {
+class ActivitySingUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding: ActivitySingUpBinding = ActivitySingUpBinding.inflate(layoutInflater)
+        val binding = ActivitySingUpBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -34,7 +34,7 @@ class SingUp : AppCompatActivity() {
                         binding.email.text.toString(),
                         binding.password.text.toString())
 
-                val intent = Intent(this,Home::class.java)
+                val intent = Intent(this,ActivityHome::class.java)
                 intent.putExtra("cliente",cliente)
                 startActivity(intent)
             }

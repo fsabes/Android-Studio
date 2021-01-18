@@ -3,12 +3,12 @@ package com.example.ejercicio2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ejercicio2.databinding.ActivityMainBinding
+import com.example.ejercicio2.databinding.ActivityStartBinding
 
-class MainActivity : AppCompatActivity() {
+class ActivityStart : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        var binding = ActivityStartBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navegarHaciaLogin() {
-        val intent = Intent(this,Login::class.java)
+        val intent = Intent(this,ActivityLogin::class.java)
         startActivity(intent)
     }
 
     private fun navegarHaciaSingUp() {
-        val intent = Intent(this,SingUp::class.java)
+        val intent = Intent(this,ActivitySingUp::class.java)
         startActivity(intent)
     }
 }
