@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivitySingUp">
+    tools:context=".iu.SingUpActivity">
 
     <include
         android:id="@+id/toolbarLogin"
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_marginTop="55dp"
-        android:background="@color/gray">
+        android:background="@color/background">
 
 
         <ImageView
@@ -41,7 +41,7 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:textAlignment="center"
-            android:background="@drawable/background_edit_text"
+            android:background="@drawable/background_edit_text2"
             android:hint="Username"
             android:layout_marginTop="10dp"
             android:layout_alignBottom="@id/password"
@@ -54,7 +54,7 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:textAlignment="center"
-            android:background="@drawable/background_edit_text"
+            android:background="@drawable/background_edit_text2"
             android:hint="Password"
             android:layout_marginTop="10dp"
             android:layout_alignParentBottom="true"
@@ -80,7 +80,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Login"
+        android:textColor="@color/red"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="@color/gray_dark"/>
+        android:backgroundTint="@color/white"/>
 
 </RelativeLayout>

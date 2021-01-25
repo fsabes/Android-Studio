@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/gray"
+    android:background="@color/white"
     android:id="@+id/myToolbar"
-    app:title="Home">
+    app:title="Home"
+    app:titleTextColor="#3e4462"
+    app:titleTextAppearance="@style/style_toolbar">
 </androidx.appcompat.widget.Toolbar>

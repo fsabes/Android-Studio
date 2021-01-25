@@ -10,5 +10,8 @@
     <color name="gray">#A4A0A0</color>
     <color name="gray_dark">#4A4747</color>
     <color name="gray_dark2">#302F2F</color>
-    <color name="red">#F80000</color>
+    <color name="violeta">#D13DEF</color>
+    <color name="background">#f8e8e5</color>
+    <color name="red">#e84c4f</color>
+    <color name="yellow">#EDA345</color>
 </resources>

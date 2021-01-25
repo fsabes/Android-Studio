@@ -1,12 +1,10 @@
-package com.example.ejercicio2
+package com.example.ejercicio2.entities
 
 import android.os.Parcel
 import android.os.Parcelable
-import android.text.Editable
 
 class Cliente(private var nombre: String, private var apellido: String, private var username: String,
-              private var email: String, private var password: String
-) : Parcelable{
+              private var email: String, private var password: String) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readString().toString(),
@@ -39,6 +37,6 @@ class Cliente(private var nombre: String, private var apellido: String, private 
     }
 
     fun saludar() : String{
-        return "Welcome \n $username!!!";
+        return "Hola , $nombre!!!";
     }
 }

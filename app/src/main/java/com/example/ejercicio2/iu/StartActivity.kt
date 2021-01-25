@@ -1,14 +1,22 @@
-package com.example.ejercicio2
+package com.example.ejercicio2.iu
 
+import com.example.ejercicio2.databinding.ActivityStartBinding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ejercicio2.databinding.ActivityStartBinding
 
-class ActivityStart : AppCompatActivity() {
+class StartActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityStartBinding
+
+    companion object{
+        val CLIENTE = "cliente"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding = ActivityStartBinding.inflate(layoutInflater)
+
+        binding = ActivityStartBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -22,12 +30,12 @@ class ActivityStart : AppCompatActivity() {
     }
 
     private fun navegarHaciaLogin() {
-        val intent = Intent(this,ActivityLogin::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
     private fun navegarHaciaSingUp() {
-        val intent = Intent(this,ActivitySingUp::class.java)
+        val intent = Intent(this, SingUpActivity::class.java)
         startActivity(intent)
     }
 }

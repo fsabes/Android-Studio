@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
     <ImageView
         android:id="@+id/imgStart"
@@ -33,7 +34,8 @@
         android:layout_alignBottom="@id/btnSingUp"
         android:layout_marginBottom="80dp"
         android:text="Login"
-        android:backgroundTint="@color/gray_dark"/>
+        android:textColor="@color/red"
+        android:backgroundTint="@color/white"/>
 
     <Button
         android:id="@+id/btnSingUp"
@@ -43,5 +45,7 @@
         android:layout_centerHorizontal="true"
         android:text="Sing Up"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/gray_dark"/>
+        android:textColor="@color/red"
+        android:backgroundTint="@color/white"/>
+
 </RelativeLayout>
