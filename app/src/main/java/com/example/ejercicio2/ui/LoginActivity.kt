@@ -1,4 +1,4 @@
-package com.example.ejercicio2.iu
+package com.example.ejercicio2.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

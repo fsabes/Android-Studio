@@ -1,18 +1,32 @@
 package com.example.ejercicio2
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ejercicio2.entities.recipes.Recipe
 import com.example.ejercicio2.entities.recipes.Recipes
 import com.squareup.picasso.Picasso
 
-class RecipeVerticalAdapter(var recipes: Recipes) : RecyclerView.Adapter<RecipeVerticalAdapter.ViewHolder>() {
+class RecipeVerticalAdapter(var recipes: Recipes, var onClickRecipe: OnClickRecipe) : RecyclerView.Adapter<RecipeVerticalAdapter.ViewHolder>() {
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        var view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_recipe_vertical, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.onBind(recipes.recipes[position])
+    }
+
+    override fun getItemCount(): Int = recipes.recipes.size
+
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var tvTitle = view.findViewById<TextView>(R.id.tv_item_Vertical_title)
         var tvPrice = view.findViewById<TextView>(R.id.tv_item_Vertical_price)
         var tvDelivery = view.findViewById<TextView>(R.id.tv_item_Vertical_delivery)
@@ -29,20 +43,23 @@ class RecipeVerticalAdapter(var recipes: Recipes) : RecyclerView.Adapter<RecipeV
                 tvAptoCeliaco.text = ""
             }
             Picasso.get()
-                .load(recipe.image)
-                .into(ivImage)
+                    .load(recipe.image)
+                    .into(ivImage)
+
+            itemView.setOnClickListener {
+                onClickRecipe.onClickRecipe(recipe.id)
+            }
         }
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_recipe_vertical, parent, false)
-        return ViewHolder(view)
+
+    interface OnClickRecipe{
+        fun onClickRecipe(id : Int)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(recipes.recipes[position])
+    companion object{
+        fun setRecipeVerticalAdapter(context : Context, rvRecipes: RecyclerView, listRecipes: Recipes, onClickRecipe: OnClickRecipe) {
+            rvRecipes.adapter = RecipeVerticalAdapter(listRecipes, onClickRecipe)
+            rvRecipes.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        }
     }
-
-    override fun getItemCount(): Int = recipes.recipes.size
-
 }

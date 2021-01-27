@@ -13,5 +13,6 @@
     <color name="violeta">#D13DEF</color>
     <color name="background">#f8e8e5</color>
     <color name="red">#e84c4f</color>
+    <color name="light_red">#F1AEAF</color>
     <color name="yellow">#EDA345</color>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iu.HomeActivity"
+    tools:context=".ui.HomeActivity"
     android:background="@color/background">
 
     <include
@@ -17,10 +17,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/ToolbarHome"
         android:text="Hola, CLiente"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"/>
 
     <TextView
         android:id="@+id/tv_home"
@@ -30,59 +31,122 @@
         android:text="¿Que te gustaria pedir Hoy?"
         android:textSize="16sp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"/>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ly_btns"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/tv_home"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_home">
 
-        <Button
+        <ImageButton
+            android:id="@+id/btn_favorite"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginRight="20dp"
-            android:text="btn"
-            android:textColor="@color/red"/>
+            android:background="@drawable/background_button_home"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_favorites"
+            app:layout_constraintEnd_toStartOf="@+id/btn_offer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginRight="20dp"
-            android:text="btn"
-            android:textColor="@color/red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Favoritos"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/btn_favorite"
+            app:layout_constraintStart_toStartOf="@id/btn_favorite"
+            app:layout_constraintTop_toBottomOf="@+id/btn_favorite" />
 
-        <Button
+
+        <ImageButton
+            android:id="@+id/btn_offer"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginRight="20dp"
-            android:text="btn"
-            android:textColor="@color/red"/>
-        <Button
+            android:background="@drawable/background_button_home"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_offer"
+            app:layout_constraintEnd_toStartOf="@+id/btn_trend"
+            app:layout_constraintStart_toEndOf="@+id/btn_favorite"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ofertas"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/btn_offer"
+            app:layout_constraintStart_toStartOf="@id/btn_offer"
+            app:layout_constraintTop_toBottomOf="@+id/btn_offer" />
+
+        <ImageButton
+            android:id="@+id/btn_trend"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:backgroundTint="@color/white"
-            android:text="btn"
-            android:textColor="@color/red"/>
-    </LinearLayout>
+            android:background="@drawable/background_button_home"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_trend"
+            app:layout_constraintEnd_toStartOf="@+id/btn_more_info"
+            app:layout_constraintStart_toEndOf="@+id/btn_offer"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tendencias"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/btn_trend"
+            app:layout_constraintStart_toStartOf="@id/btn_trend"
+            app:layout_constraintTop_toBottomOf="@+id/btn_trend" />
+
+        <ImageButton
+            android:id="@+id/btn_more_info"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/background_button_home"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_more_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_trend"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mas"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/btn_more_info"
+            app:layout_constraintStart_toStartOf="@+id/btn_more_info"
+            app:layout_constraintTop_toBottomOf="@+id/btn_more_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tv_promotion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Promociones del dia"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ly_btns"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_itali"/>
 
     <TextView
         android:id="@+id/tv_btn_ver_mas"
@@ -94,7 +158,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ly_btns"
         android:layout_marginRight="15dp"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:textColor="@color/red"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list_recipe"
@@ -106,4 +171,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_promotion"
         android:orientation="horizontal"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/button_nav"
+        app:itemRippleColor="@color/red"
+        app:itemTextColor="@color/button_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation_home" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

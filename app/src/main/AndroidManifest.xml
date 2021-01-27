@@ -11,14 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio2">
-        <activity android:name=".iu.DetailsActivity"></activity>
-        <activity android:name=".iu.PromotionActivity" />
-        <activity android:name=".ActivityB" />
-        <activity android:name=".ActivityA" />
-        <activity android:name=".iu.HomeActivity" />
-        <activity android:name=".iu.LoginActivity" />
-        <activity android:name=".iu.SingUpActivity" />
-        <activity android:name=".iu.StartActivity">
+        <activity android:name=".ui.DetailsActivity"></activity>
+        <activity android:name=".ui.PromotionActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.SingUpActivity" />
+        <activity android:name=".ui.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

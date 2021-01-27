@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iu.DetailsActivity">
+    tools:context=".ui.DetailsActivity">
 
     <include
-        android:id="@+id/include"
+        android:id="@+id/toolbar_details"
         layout="@layout/toolbar" />
 
     <ImageView
         android:id="@+id/iv_details"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        app:layout_constraintTop_toBottomOf="@+id/include"/>
+        app:layout_constraintTop_toBottomOf="@id/toolbar_details"/>
 
     <TextView
         android:id="@+id/tv_promotion_title"

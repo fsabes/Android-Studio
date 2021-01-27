@@ -1,4 +1,4 @@
-package com.example.ejercicio2.iu
+package com.example.ejercicio2.ui
 
 import com.example.ejercicio2.databinding.ActivityStartBinding
 import android.content.Intent
