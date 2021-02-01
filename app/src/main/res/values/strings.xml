@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">Ejercicio2</string>
+    <string name="app_name">App Foods</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="seeMore">Ver más</string>
+    <string name="favorite">Favoritos</string>
+    <string name="offer">Ofertas</string>
+    <string name="trend">Tendencias</string>
+    <string name="more">Mas</string>
+    <string name="message">¿Que te gustaria pedir Hoy?</string>
+    <string name="promotion">Promociones del dia</string>
+    <string name="jl_jayakatwang_no_301">Jl.Jayakatwang no 301</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="lorem_ipsum">LOREM IPSUM</string>
+    <string name="shopping">Shopping</string>
+    <string name="more_detail">ver detalles</string>
+
+
 </resources>

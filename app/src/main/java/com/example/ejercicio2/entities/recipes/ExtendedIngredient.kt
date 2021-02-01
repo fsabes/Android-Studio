@@ -13,5 +13,5 @@ data class ExtendedIngredient(
     val original: String,
     val originalName: String,
     val originalString: String,
-    val unit: String
+    val unit: String,
 )

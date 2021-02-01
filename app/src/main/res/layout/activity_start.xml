@@ -1,51 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:paddingHorizontal="43dp"
+    android:paddingTop="148dp"
+    android:paddingBottom="45dp">
 
     <ImageView
         android:id="@+id/imgStart"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:background="@color/gray"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:src="@drawable/login"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/img_login"
+        android:layout_marginHorizontal="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="2"/>
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOREM IPSUM"
-        android:layout_centerHorizontal="true"
-        android:layout_alignBottom="@id/imgStart"
-        android:layout_marginBottom="-50dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/lorem_ipsum"
         android:textSize="24sp"
-        android:textStyle="bold|italic"/>
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgStart"
+        app:layout_constraintVertical_weight="0.5"/>
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignBottom="@id/btnSingUp"
-        android:layout_marginBottom="80dp"
-        android:text="Login"
-        android:textColor="@color/red"
-        android:backgroundTint="@color/white"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="153dp"
+        style="@style/buttonStart"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@id/btnSingUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintVertical_weight="0.7" />
 
     <Button
         android:id="@+id/btnSingUp"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Sing Up"
-        android:layout_marginBottom="40dp"
-        android:textColor="@color/red"
-        android:backgroundTint="@color/white"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/buttonStart"
+        android:text="@string/sing_up"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_weight="0.7" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

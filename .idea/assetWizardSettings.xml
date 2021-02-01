@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\franc\Desktop\screen\user.png" />
+                                                <entry key="imagePath" value="C:\Users\franc\Desktop\screen\img_splash.png" />
                                                 <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
@@ -71,10 +71,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\franc\Desktop\screen\user.png" />
-                                      <entry key="outputName" value="ic_menu_profile" />
+                                      <entry key="imageAsset" value="C:\Users\franc\Desktop\screen\img_splash.png" />
+                                      <entry key="outputName" value="ic_notification" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="e84c4f" />
+                                      <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -102,8 +102,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\franc\Desktop\screen\heart-shape-outline.png" />
-                                                <entry key="scalingPercent" value="50" />
+                                                <entry key="imagePath" value="C:\Users\franc\Desktop\screen\img_splash.png" />
+                                                <entry key="scalingPercent" value="66" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -135,7 +135,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_favorites" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="e55931" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -320,11 +321,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background"
-        android:padding="10dp">
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -24,29 +25,33 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:background="@drawable/background_float_button_home"
                 android:src="@drawable/ic_favorites"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="21dp"
+                android:elevation="10dp"
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/iv_item_vertical"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="72dp"
+                android:layout_height="82dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="15dp"
                 android:scaleType="fitXY"/>
 
             <TextView
                 android:id="@+id/tv_item_Vertical_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
                 android:text="Ensalada de frutas"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -57,30 +62,41 @@
                 android:id="@+id/tv_item_Vertical_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="30$"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                tools:text="$30"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_item_vertical"
                 app:layout_constraintTop_toBottomOf="@+id/tv_item_Vertical_title" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/img_delivery"
+                app:layout_constraintStart_toEndOf="@+id/iv_item_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_item_Vertical_price" />
 
             <TextView
                 android:id="@+id/tv_item_Vertical_delivery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="8dp"
                 android:text="Delivery gratis"
-                app:layout_constraintStart_toEndOf="@+id/iv_item_vertical"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/tv_item_Vertical_price" />
 
             <TextView
-                android:id="@+id/tv_item_vertical_apto_celiaco"
+                android:id="@+id/tv_item_vertical_gluten_free"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:text="Apto Celiaco"
+                tools:text="Apto Celiacos"
+                android:textSize="14sp"
                 android:textColor="@color/yellow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_item_vertical"/>

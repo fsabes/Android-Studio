@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar. -->
+    <style name="style_toolbar" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="drawerArrowStyle">@color/red</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/red</item>
+    </style>
+
+    <!--  Style text Secondary  -->
+    <style name="textSecondary" parent="android:TextAppearance">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- style ImageButton Home   -->
+    <style name="imageButton" parent="android:Widget.ImageButton">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="android:background">@drawable/background_button_home</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="editText" parent="android:Widget.EditText">
+        <item name="android:background"> @drawable/background_edit_text2</item>
+        <item name="android:textColorHint">#111111</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">25dp</item>
+    </style>
+
+    <style name="buttonStart" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:backgroundTint">#F9D4CD</item>
+    </style>
+</resources>
