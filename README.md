@@ -1,2 +1,2 @@
-#  Proyecto app (Android-Studio)
+#  Proyecto curso(Android-Studio)
 
