@@ -36,6 +36,8 @@ class Client(private var name: String, private var surname: String = "", private
         }
     }
 
+    fun convertToHashMap() = hashMapOf("name" to name, "surname" to surname , "username" to username, "email" to email)
+
     fun getName(): String {
         return name
     }

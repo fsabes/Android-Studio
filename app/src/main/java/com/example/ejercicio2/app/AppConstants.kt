@@ -10,6 +10,7 @@ object AppConstants {
     const val GLUTEN_FREE = "Apto Celiacos"
     const val ID = "id"
     const val EMPTY_FIELDS = "Empty fields are not allowed"
+    const val USER_NOT_EXIST = "The user don't exist"
 
     //title Toolbar
     const val SING_UP = "Sing Up"

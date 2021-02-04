@@ -8,6 +8,7 @@ import com.example.ejercicio2.R
 import com.example.ejercicio2.app.AppConstants
 import com.example.ejercicio2.ui.login.LoginActivity
 import com.example.ejercicio2.ui.sing_up.SingUpActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class StartActivity : AppCompatActivity() {
 

@@ -9,6 +9,7 @@ import com.example.ejercicio2.ui.home.fragment.ProfileFragment
 import com.example.ejercicio2.ui.home.fragment.SearchFragment
 import com.example.ejercicio2.ui.home.fragment.ShoppingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
 
